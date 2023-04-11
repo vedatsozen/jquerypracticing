@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE 128</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+
+<div id="btns">
+<button id="btn1">Home</button>
+<button id="btn2">Div 2</button>
+<button id="btn3">Div 3</button>
+
+</div>
+
+
+<div id="div1">
+    <button id="div1btn">Click to Learn Something About Here</button>
+    <div id="div1text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis scelerisque mauris, in rhoncus lacus rhoncus et. Nulla ut ipsum vel est lacinia ultricies. Morbi laoreet risus ac augue consectetur luctus. Aliquam ac semper dui. Cras at enim vel massa rhoncus posuere. Aliquam erat volutpat. Donec porta sollicitudin ligula a dapibus. Proin eu ipsum hendrerit, suscipit tellus a, varius odio. Nam vulputate neque orci, a aliquam nibh varius vel. Etiam aliquam sem purus, ut faucibus nibh vestibulum vel. Vestibulum vitae ligula a sem ultrices mollis.
+
+Vivamus vulputate non tortor at rutrum. Sed in augue convallis, blandit mauris vel, efficitur lacus. Suspendisse sagittis dapibus tristique. In eu magna felis. Aenean finibus massa id libero posuere mollis. Fusce lobortis risus sit amet massa commodo, sed semper felis fermentum. Suspendisse congue vehicula nisl, in condimentum metus aliquet vitae. Nam eu commodo purus. Aenean nisi purus, tempor eu felis non, consequat laoreet nibh. Aliquam erat volutpat. Vestibulum ac nisi sed neque condimentum pulvinar quis sit amet ex. Nulla facilisi. In euismod magna velit, sit amet rutrum diam bibendum eget. Donec ultricies lorem sodales, efficitur metus in, tristique odio. Mauris condimentum nulla vitae cursus porta. Fusce tempus velit a fermentum tempus.
+
+Aliquam non nisi a sapien iaculis sollicitudin id vel dui. Praesent gravida magna mauris, sed imperdiet ex fermentum at. Phasellus ut tempor tellus. In sed metus vitae leo bibendum sagittis. Sed varius nisi dui, ut accumsan ex volutpat convallis. Curabitur placerat blandit metus quis condimentum. Etiam arcu sapien, bibendum quis euismod porttitor, congue non leo. Donec imperdiet est neque, a blandit risus iaculis quis. Duis gravida, tortor venenatis tempor laoreet, velit ante venenatis mauris, eu consequat neque ante non metus. Sed eget nisl urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed non libero ipsum. Aenean lectus metus, faucibus accumsan justo id, posuere varius ipsum.
+    </div>
+</div>
+
+<div id="div2">
+
+<div id="div2slidercontainer">
+
+    <div id="div2slider">
+        
+        <img id="div2img1" src="img/arkaplan.jpg">
+        <img id="div2img2" src="img/div2.jpg">
+        <img id="div2img3" src="img/div3.jpg">
+    </div>
+
+</div>
+
+    <div id="div2btns">
+    <button id="div2btn1">1</button>
+    <button id="div2btn2">2</button>
+    <button id="div2btn3">3</button>
+    </div>
+
+</div>
+
+<div id="div3">
+
+<div id="div3photos">
+    <img src="img/arkaplan.jpg">
+    <img src="img/div2.jpg">
+    <img src="img/div3.jpg">
+</div>
+  
+</div>
+
+</body>
+<script>
+
+
+
+$(document).ready(function() {
+
+    $("#btn1").click(function(){
+        $("html").animate({ scrollTop: $("#div1").offset().top },1500);
+})
+
+    $("#btn2").click(function(){
+        $("html").animate({ scrollTop: $("#div2").offset().top },1500);
+})
+
+$("#btn3").click(function(){
+        $("html").animate({ scrollTop: $("#div3").offset().top },1500);
+})
+
+$("#div2btn1").click(function(){
+        $("#div2slider").animate({left:"0vw"},1500);
+})
+
+$("#div2btn2").click(function(){
+        $("#div2slider").animate({left:"-100vw"},1500);
+})
+
+$("#div2btn3").click(function(){
+        $("#div2slider").animate({left:"-200vw"},1500);
+})
+
+$("#div3photos img").click(function() {
+    var imgsrc = $(this).attr("src");
+    $("#div3").css("background-image","url(" + imgsrc + ")");
+})
+
+$("#div1btn").click(function() {
+    $("#div1text").toggle();
+})
+
+})
+
+</script>
+</html>
