@@ -9,4 +9,4 @@ You can slide and see other photos.
 
 In third div, there is small photos that you can make them as background photo.
 
-
+Deployed link https://jquerypracticing.netlify.app/
