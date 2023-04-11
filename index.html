@@ -36,9 +36,9 @@ Aliquam non nisi a sapien iaculis sollicitudin id vel dui. Praesent gravida magn
 
     <div id="div2slider">
         
-        <img id="div2img1" src="img/arkaplan.jpg">
-        <img id="div2img2" src="img/div2.jpg">
-        <img id="div2img3" src="img/div3.jpg">
+        <img id="div2img1" src="img/div2.jpg">
+        <img id="div2img2" src="img/div22.jpg">
+        <img id="div2img3" src="img/div23.jpg">
     </div>
 
 </div>
@@ -54,9 +54,9 @@ Aliquam non nisi a sapien iaculis sollicitudin id vel dui. Praesent gravida magn
 <div id="div3">
 
 <div id="div3photos">
-    <img src="img/arkaplan.jpg">
-    <img src="img/div2.jpg">
     <img src="img/div3.jpg">
+    <img src="img/div32.jpg">
+    <img src="img/div33.jpg">
 </div>
   
 </div>
@@ -96,6 +96,8 @@ $("#div3photos img").click(function() {
     var imgsrc = $(this).attr("src");
     $("#div3").css("background-image","url(" + imgsrc + ")");
 })
+
+$("#div1text").hide();
 
 $("#div1btn").click(function() {
     $("#div1text").toggle();
